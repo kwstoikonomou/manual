@@ -1,0 +1,319 @@
+/* HEADER */
+.LandingPage .LPHeader {
+  background-image: url("./../../icons/hair-cat-header@2x.jpg");
+  background-size: cover;
+  height: 680px;
+  box-sizing: border-box;
+  padding: 30px 80px 120px;
+  background-size: 1280px 680px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #B8E6E2;
+}
+
+@media(max-width: 1023px) {
+  .LandingPage .LPHeader {
+    padding: 30px 40px 120px;
+    background-size: 853px 453px;
+    /* background-position-x: calc(50% - 20px); */
+  }
+}
+
+@media(max-width: 767px) {
+  .LandingPage .LPHeader {
+    background-image: none;
+    height: unset;
+    padding-bottom: 0;
+  }
+}
+
+/* we want the LPHeader's right side to be exactly at the middle of the screen. We are using LPHeaderContainer as a helper. We will set it's width to double the LPHeader's width */
+.LandingPage .LPHeader .LPHeaderContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.LandingPage .LPHeader .LPSymbol {
+  margin-bottom: 105px;
+}
+@media(max-width: 767px) {
+  .LandingPage .LPHeader .LPSymbol {
+    margin-bottom: 20px;
+  }
+}
+
+.LandingPage .LPHeader .LPTitle {
+  font-family: 'Montserrat';
+  font-size: 82px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #0c3c3d;
+  max-width: 600px;
+  margin-bottom: 22px;
+}
+@media(max-width: 767px) {
+  .LandingPage .LPHeader .LPTitle {
+    font-size: 42px;
+  }
+}
+
+.LandingPage .LPHeader .LPSubTitle {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #0c3c3d;
+  max-width: 400px;
+  margin-bottom: 38px;
+}
+
+/* SECTION */
+.LPSection .LPSectionTitle {
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0c3c3d;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+@media(max-width: 767px) {
+  .LPSection .LPSectionTitle {
+    padding: 40px 10px 30px;
+  }
+}
+
+
+/* CONTENT BLOCK */
+.LPContentBlock {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.LPContentBlock:last-of-type {
+  margin-bottom: 96px;
+}
+
+.LPContentBlock .Image,
+.LPContentBlock .Content {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.LPContentBlock .Content {
+  padding-top: 162px;
+  position: relative;
+}
+
+.LPContentBlock.ContentRight .Content {
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+.LPContentBlock.ContentLeft .Content {
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 80px;
+}
+@media(max-width: 767px) {
+  .LPContentBlock {
+    padding: 0 20px;
+  }
+  .LPContentBlock .Image {
+    width: 30%;
+  }
+
+  .LPContentBlock .Content {
+    width: 70%;
+  }
+
+  .LPContentBlock .Content {
+    padding-top: 0;
+  }
+
+  .LPContentBlock.ContentRight .Content {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  
+  .LPContentBlock.ContentLeft .Content {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+}
+
+.LPContentBlock .Content .ContentTitle {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2.4px;
+  color: #34d1d1;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.LPContentBlock .Content .ContentSubTitle {
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #0c3c3d;
+  margin-bottom: 12px;
+}
+
+.LPContentBlock .Content .ContentText {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #0c3c3d;
+}
+
+.LPContentBlock .Content .ContentCounter {
+  height: 520px;
+  font-family: Montserrat;
+  font-size: 427px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #eeeeee;
+
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+@media(max-width: 767px) {
+  .LPContentBlock .Content .ContentCounter {
+    display: none;
+  }
+}
+
+.LPContentBlock.ContentRight .Content .ContentCounter {
+  left: -138px;
+}
+
+.LPContentBlock.ContentLeft .Content .ContentCounter {
+  right: -103px;
+}
+
+
+/* FOOTER */
+.LPFooter {
+  background-color: #e5f5f4;
+  padding: 80px 80px 0;
+}
+
+.LPFooter .LPFooterContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+  padding-bottom: 66px;
+}
+@media(max-width: 767px) {
+  .LPFooter {
+    padding: 20px 20px 0;
+  }
+  .LPFooter .LPFooterContainer {
+    text-align: left;
+  }
+}
+
+.LPFooter .Column {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 60px;
+  text-align: left;
+}
+.LPFooter .Column:last-of-type {
+  padding-right: 0;
+}
+
+.LPFooter .Column .ColumnTitle {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  color: #34d1d1;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.LPFooter .Column .ColumnLink {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.57;
+  letter-spacing: normal;
+  color: #0c3c3d;
+}
+
+.LPFooter .Column .ColumnLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media(max-width: 767px) {
+  .LPFooter .Column {
+    display: block;
+    padding-right: 0px;
+    margin: 0 -10px
+  }
+  .LPFooter .Column .ColumnTitle {
+    margin: 24px 10px 10px;
+  }
+  .LPFooter .Column:first-of-type .ColumnTitle {
+    margin-top: 0px;
+  }
+  .LPFooter .Column .ColumnLink {
+    line-height: 2;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+  }
+}
+
+.LPFooter .LPFooterCopyright {
+  padding: 26.5px 0;
+  border-top: 1px solid;
+  border-top-color: rgba(108, 108, 108, 0.5);
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(108, 108, 108, 0.5);
+}
+@media(max-width: 767px) {
+  .LPFooter .LPFooterCopyright {
+    padding: 12px 0;
+  }
+}

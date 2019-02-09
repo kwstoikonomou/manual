@@ -1,0 +1,45 @@
+.Button {
+  font-family: 'Montserrat';
+  display: inline-block;
+  position: relative;
+  padding: 16.5px 37.5px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 49.5px;
+  box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.5);
+  background-color: #34d1d1;
+}
+
+.Button:hover {
+  opacity: 0.85;
+}
+
+.Button .loader {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.Button.Button-full {
+  display: block;
+}
+
+.Button:disabled {
+  cursor: default;
+  background-color: #34d1d1;
+}
+
+.Button.inactive, .Button.inactive:hover {
+  color: #ffffff;
+  background-color: #e0e0e0!important;
+  cursor: not-allowed;
+}
